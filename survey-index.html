@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="survey-style.css" />
+    <title>LearnIt Survey ✍🏾</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">
+        LearnIt Survey Form
+      </h1>
+
+      <p id="description">
+        The information you share via this form will be used to create a new
+        learning app!
+      </p>
+
+      <form id="survey-form">
+        <div id="name-div">
+          <label for="name" id="name-label">
+            Name
+            <input type="text" id="name" placeholder="Enter Name" />
+          </label>
+        </div>
+
+        <div id="email-div">
+          <label for="email" id="email-label">
+            Email
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Email"
+              oninput="check(this)"
+            />
+          </label>
+        </div>
+
+        <div id="number-div">
+          <label for="number" id="number-label">
+            Enter numbers that equate to your physical age
+            <input
+              type="number"
+              id="number"
+              placeholder="(ie: 18-100)"
+              min="18"
+              max="100"
+              oninput="check(this)"
+            />
+          </label>
+        </div>
+
+        <div id="dropdown-div">
+          <label for="dropdown" id="dropdown-label">
+            What is your favorite color?
+            <select id="dropdown">
+              <option value="drop">Rouge</option>
+              <option value="drop">Orange</option>
+              <option value="drop">Jaune</option>
+              <option value="drop">Vert</option>
+              <option value="drop">Bleu</option>
+              <option value="drop">Violet</option>
+              <option value="drop">Autre</option>
+              <option value="drop">Je déteste les couleurs</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="learning-div">
+          <label for="radio" id="learning-label">
+            Do you like learning?
+          </label>
+          <br />
+          <label for="yes" id="yes-learn-label">
+            <input type="radio" name="learning" id="yes-learn" />
+            Fer sure
+          </label>
+          <br />
+          <label for="maybe" id="maybe-learn-label">
+            <input type="radio" name="learning" id="maybe-learn" />
+            Kinda
+          </label>
+          <br />
+          <label for="no" id="no-learn-label">
+            <input type="radio" name="learning" id="no-learn" />
+            No
+          </label>
+          <br />
+          <label for="potential" id="potential-learn-label">
+            <input type="radio" name="learning" id="potential-learn" />
+            I can be persuaded
+          </label>
+        </div>
+
+        <div id="checkbox-div">
+          <label for="checkbox" id="checkbox-label">
+            Check this just for the heck of it
+          </label>
+          <br />
+          <label for="checkbox" id="sure-check-label">
+            <input type="checkbox" id="sure-check" />
+            Sure
+          </label>
+          <br />
+          <label for="checkbox" id="no-check-label">
+            <input type="checkbox" id="no-check" />
+            No
+          </label>
+          <br />
+          <label for="checkbox" id="ha-label">
+            Ha! Gotcha.
+          </label>
+        </div>
+
+        <div id="textarea-div">
+          <label for="textarea" id="textarea-label">
+            Any comments or suggestions?
+            <br />
+            <input
+              type="textarea"
+              class="comments"
+              id="textarea"
+              placeholder="Feed me your remarks..."
+              wrap="hard"
+            />
+          </label>
+        </div>
+
+        <button id="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+    <script src="survey.js"></script>
+  </body>
+</html>

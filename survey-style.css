@@ -1,0 +1,139 @@
+.container {
+  background: #d1c4e9;
+  font-family: "Balsamiq Sans", cursive;
+  border-radius: 4px;
+  padding: 10px;
+  color: #d1c4e9;
+  max-width: 600px;
+}
+#title {
+  color: #212121;
+  text-align: center;
+}
+#description {
+  color: #212121;
+  text-align: center;
+}
+#survey-form {
+  display: block;
+  margin: 0 auto;
+  background: #673ab7;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 4px;
+}
+#name-div {
+  padding: 20px;
+  padding-bottom: 0px;
+}
+#name-label {
+  width: 100%;
+}
+#name {
+  color: #757575;
+  width: 100%;
+  border-radius: 4px;
+}
+#email-div {
+  padding: 20px;
+  padding-bottom: 0px;
+}
+#email-label {
+  width: 100%;
+}
+#email {
+  color: #757575;
+  width: 100%;
+  border-radius: 4px;
+}
+#number-div {
+  padding: 20px;
+  padding-bottom: 0px;
+}
+#number-label {
+  width: 100%;
+}
+#number {
+  color: #757575;
+  width: 100%;
+  border-radius: 4px;
+}
+#dropdown-div {
+  padding: 20px;
+  padding-bottom: 0px;
+}
+#dropdown-label {
+  width: 100%;
+}
+#dropdown {
+  color: #757575;
+  width: 100%;
+  border-radius: 4px;
+}
+#learning-div {
+  padding: 20px;
+  padding-bottom: 0px;
+}
+#learning-label {
+  width: 100%;
+}
+#yes-learn-label {
+  width: 100%;
+}
+#maybe-learn-label {
+  width: 100%;
+}
+#no-learn-label {
+  width: 100%;
+}
+#potential-learn-label {
+  width: 100%;
+}
+#checkbox-div {
+  padding: 20px;
+  padding-bottom: 0px;
+}
+#checkbox-label {
+  width: 100%;
+}
+#sure-check-label {
+  width: 100%;
+}
+#sure-check {
+  border-radius: 0px;
+}
+#no-check-label {
+  width: 100%;
+}
+#no-check {
+  border-radius: 4px;
+}
+#ha-label {
+  font-size: 10px;
+  width: 100%;
+}
+#textarea-div {
+  padding: 20px;
+  padding-bottom: 0px;
+}
+#textarea-label {
+  width: 100%;
+}
+#textarea {
+  color: #757575;
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px;
+  border: 2px solid #212121;
+  resize: vertical;
+}
+#submit {
+  background: #ff5722;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 2px solid #212121;
+  border-radius: 4px;
+}
