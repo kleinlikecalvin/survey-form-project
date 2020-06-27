@@ -31,7 +31,7 @@
         <div id="name-div">
           <label for="name" id="name-label">
             Name
-            <input type="text" id="name" placeholder="Enter Name" />
+            <input type="text" id="name" placeholder="Enter Name" required />
           </label>
         </div>
 
@@ -43,6 +43,7 @@
               id="email"
               placeholder="Enter Email"
               oninput="check(this)"
+              required
             />
           </label>
         </div>
@@ -78,27 +79,37 @@
         </div>
 
         <div id="learning-div">
-          <label for="radio" id="learning-label">
+          <p>
             Do you like learning?
-          </label>
+          </p>
           <br />
           <label for="yes" id="yes-learn-label">
-            <input type="radio" name="learning" id="yes-learn" />
+            <input type="radio" name="learning" id="yes-learn" value="yes" />
             Fer sure
           </label>
           <br />
           <label for="maybe" id="maybe-learn-label">
-            <input type="radio" name="learning" id="maybe-learn" />
+            <input
+              type="radio"
+              name="learning"
+              id="maybe-learn"
+              value="maybe"
+            />
             Kinda
           </label>
           <br />
           <label for="no" id="no-learn-label">
-            <input type="radio" name="learning" id="no-learn" />
+            <input type="radio" name="learning" id="no-learn" value="no" />
             No
           </label>
           <br />
           <label for="potential" id="potential-learn-label">
-            <input type="radio" name="learning" id="potential-learn" />
+            <input
+              type="radio"
+              name="learning"
+              id="potential-learn"
+              value="intrigued"
+            />
             I can be persuaded
           </label>
         </div>
@@ -109,16 +120,16 @@
           </label>
           <br />
           <label for="checkbox" id="sure-check-label">
-            <input type="checkbox" id="sure-check" />
+            <input type="checkbox" id="sure-check" value="sure" />
             Sure
           </label>
           <br />
           <label for="checkbox" id="no-check-label">
-            <input type="checkbox" id="no-check" />
+            <input type="checkbox" id="no-check" value="no" />
             No
           </label>
           <br />
-          <label for="checkbox" id="ha-label">
+          <label for="checkbox" id="ha-label" value="ha">
             Ha! Gotcha.
           </label>
         </div>
@@ -127,13 +138,16 @@
           <label for="textarea" id="textarea-label">
             Any comments or suggestions?
             <br />
-            <input
+            <textarea
+              name="comments"
+              id="textarea"
+              cols="30"
+              rows="10"
               type="textarea"
               class="comments"
-              id="textarea"
               placeholder="Feed me your remarks..."
               wrap="hard"
-            />
+            ></textarea>
           </label>
         </div>
 
